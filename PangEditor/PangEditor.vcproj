@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding = "Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.00"
+	Name="PangEditor"
+	ProjectGUID="{76E93435-5C1C-4334-929C-0A8F4D85FE4C}">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="."
+			IntermediateDirectory="compilazione\"
+			ConfigurationType="1"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions="-Zm200 -GX -w34100 -w34189"
+				Optimization="4"
+				AdditionalIncludeDirectories=".,..,compilazione,..\scenegraph,..\common,..\vcg,c:\code\SDL-1.2.6\include,c:\code\lib3ds-1.2.0,c:\code\glew\include,$(QTDIR)\include,compilazione\,.,compilazione\,C:\Qt\3.2.0Educational\mkspecs\win32-msvc.net"
+				PreprocessorDefinitions="_WINDOWS,UNICODE,WIN32,EDITORCODE,QT_DLL,QT_THREAD_SUPPORT"
+				GeneratePreprocessedFile="0"
+				MinimalRebuild="TRUE"
+				ExceptionHandling="TRUE"
+				RuntimeLibrary="2"
+				BufferSecurityCheck="FALSE"
+				AssemblerListingLocation="compilazione\"
+				ObjectFile="compilazione\"
+				ProgramDataBaseFileName=".\"
+				WarningLevel="3"
+				SuppressStartupBanner="TRUE"
+				DebugInformationFormat="3"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="qt-mtedu320.lib qtmain.lib opengl32.lib glu32.lib lib3ds-120sd.lib lib3ds-120d.lib glew32s.lib glew32.lib kernel32.lib user32.lib gdi32.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib imm32.lib winmm.lib wsock32.lib winspool.lib delayimp.lib"
+				OutputFile=".\PangEditor.exe"
+				SuppressStartupBanner="TRUE"
+				AdditionalLibraryDirectories="C:\Code\lib,$(QTDIR)\lib"
+				DelayLoadDLLs="opengl32.dll"
+				GenerateDebugInformation="TRUE"
+				ProgramDatabaseFile=""
+				SubSystem="2"/>
+			<Tool
+				Name="VCMIDLTool"
+				WarningLevel="0"
+				DefaultCharType="0"
+				EnableErrorChecks="1"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"
+				Description="Generate imagecollection"
+				CommandLine="$(QTDIR)\bin\uic.exe -embed PangEditor -f .imgcol -o compilazione\qmake_image_collection.cpp"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="NDEBUG"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+		</Configuration>
+	</Configurations>
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat">
+			<File
+				RelativePath="compilazione\About.cpp">
+			</File>
+			<File
+				RelativePath="..\scenegraph\Ambiente.cpp">
+			</File>
+			<File
+				RelativePath="..\common\BMF_font.c">
+			</File>
+			<File
+				RelativePath="compilazione\BallsEditor.cpp">
+			</File>
+			<File
+				RelativePath="BallsEditor.ui.h">
+			</File>
+			<File
+				RelativePath="..\scenegraph\Bonus.cpp">
+			</File>
+			<File
+				RelativePath="..\vcg\CI3ds.cpp">
+			</File>
+			<File
+				RelativePath="..\vcg\CICubeMap.cpp">
+			</File>
+			<File
+				RelativePath="..\vcg\CIMd2.cpp">
+			</File>
+			<File
+				RelativePath="..\vcg\CIMd2Normals.cpp">
+			</File>
+			<File
+				RelativePath="..\vcg\CITrackBall.cpp">
+			</File>
+			<File
+				RelativePath="compilazione\EnvEditor.cpp">
+			</File>
+			<File
+				RelativePath="EnvEditor.ui.h">
+			</File>
+			<File
+				RelativePath="..\common\Geometrie.cpp">
+			</File>
+			<File
+				RelativePath="..\scenegraph\Gruppi.cpp">
+			</File>
+			<File
+				RelativePath="compilazione\InitDialog.cpp">
+			</File>
+			<File
+				RelativePath="InitDialog.ui.h">
+			</File>
+			<File
+				RelativePath="..\scenegraph\Nodi.cpp">
+			</File>
+			<File
+				RelativePath="PangEditor.cpp">
+			</File>
+			<File
+				RelativePath="..\scenegraph\Proiettili.cpp">
+			</File>
+			<File
+				RelativePath="..\scenegraph\Protagonisti.cpp">
+			</File>
+			<File
+				RelativePath="..\scenegraph\SceneGraph.cpp">
+			</File>
+			<File
+				RelativePath="ViewEditor.cpp">
+			</File>
+			<File
+				RelativePath="compilazione\WallEditor.cpp">
+			</File>
+			<File
+				RelativePath="WallEditor.ui.h">
+			</File>
+			<File
+				RelativePath="main.cpp">
+			</File>
+			<File
+				RelativePath="compilazione\mainform.cpp">
+			</File>
+			<File
+				RelativePath="mainform.ui.h">
+			</File>
+		</Filter>
+		<Filter
+			Name="Header Files"
+			Filter="h;hpp;hxx;hm;inl">
+			<File
+				RelativePath="compilazione\About.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing compilazione\About.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe compilazione\About.h -o compilazione\moc_About.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="compilazione\moc_About.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\scenegraph\Ambiente.h">
+			</File>
+			<File
+				RelativePath="..\common\BMF_font.h">
+			</File>
+			<File
+				RelativePath="compilazione\BallsEditor.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing compilazione\BallsEditor.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe compilazione\BallsEditor.h -o compilazione\moc_BallsEditor.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="compilazione\moc_BallsEditor.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\scenegraph\Bonus.h">
+			</File>
+			<File
+				RelativePath="..\vcg\CI3ds.h">
+			</File>
+			<File
+				RelativePath="..\vcg\CICubeMap.h">
+			</File>
+			<File
+				RelativePath="..\vcg\CIMd2.h">
+			</File>
+			<File
+				RelativePath="..\vcg\CITrackBall.h">
+			</File>
+			<File
+				RelativePath="..\common\Definition.h">
+			</File>
+			<File
+				RelativePath="compilazione\EnvEditor.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing compilazione\EnvEditor.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe compilazione\EnvEditor.h -o compilazione\moc_EnvEditor.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="compilazione\moc_EnvEditor.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\common\Geometrie.h">
+			</File>
+			<File
+				RelativePath="..\scenegraph\Gruppi.h">
+			</File>
+			<File
+				RelativePath="compilazione\InitDialog.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing compilazione\InitDialog.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe compilazione\InitDialog.h -o compilazione\moc_InitDialog.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="compilazione\moc_InitDialog.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\scenegraph\Nodi.h">
+			</File>
+			<File
+				RelativePath="PangEditor.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing PangEditor.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe PangEditor.h -o compilazione\moc_PangEditor.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="compilazione\moc_PangEditor.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\scenegraph\Proiettili.h">
+			</File>
+			<File
+				RelativePath="..\scenegraph\Protagonisti.h">
+			</File>
+			<File
+				RelativePath="..\scenegraph\SceneGraph.h">
+			</File>
+			<File
+				RelativePath="ViewEditor.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing ViewEditor.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe ViewEditor.h -o compilazione\moc_ViewEditor.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="compilazione\moc_ViewEditor.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="compilazione\WallEditor.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing compilazione\WallEditor.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe compilazione\WallEditor.h -o compilazione\moc_WallEditor.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="compilazione\moc_WallEditor.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="compilazione\mainform.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing compilazione\mainform.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe compilazione\mainform.h -o compilazione\moc_mainform.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="compilazione\moc_mainform.cpp"/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="Generated MOC Files"
+			Filter="cpp;c;cxx;moc">
+			<File
+				RelativePath="compilazione\moc_About.cpp">
+			</File>
+			<File
+				RelativePath="compilazione\moc_About.cpp">
+			</File>
+			<File
+				RelativePath="compilazione\moc_BallsEditor.cpp">
+			</File>
+			<File
+				RelativePath="compilazione\moc_BallsEditor.cpp">
+			</File>
+			<File
+				RelativePath="compilazione\moc_EnvEditor.cpp">
+			</File>
+			<File
+				RelativePath="compilazione\moc_EnvEditor.cpp">
+			</File>
+			<File
+				RelativePath="compilazione\moc_InitDialog.cpp">
+			</File>
+			<File
+				RelativePath="compilazione\moc_InitDialog.cpp">
+			</File>
+			<File
+				RelativePath="compilazione\moc_PangEditor.cpp">
+			</File>
+			<File
+				RelativePath="compilazione\moc_ViewEditor.cpp">
+			</File>
+			<File
+				RelativePath="compilazione\moc_WallEditor.cpp">
+			</File>
+			<File
+				RelativePath="compilazione\moc_WallEditor.cpp">
+			</File>
+			<File
+				RelativePath="compilazione\moc_mainform.cpp">
+			</File>
+			<File
+				RelativePath="compilazione\moc_mainform.cpp">
+			</File>
+		</Filter>
+		<Filter
+			Name="Generated UI Files"
+			Filter="cpp;c;cxx;h;hpp;hxx;">
+			<File
+				RelativePath="compilazione\About.cpp">
+			</File>
+			<File
+				RelativePath="compilazione\About.h">
+			</File>
+			<File
+				RelativePath="compilazione\BallsEditor.cpp">
+			</File>
+			<File
+				RelativePath="compilazione\BallsEditor.h">
+			</File>
+			<File
+				RelativePath="compilazione\EnvEditor.cpp">
+			</File>
+			<File
+				RelativePath="compilazione\EnvEditor.h">
+			</File>
+			<File
+				RelativePath="compilazione\InitDialog.cpp">
+			</File>
+			<File
+				RelativePath="compilazione\InitDialog.h">
+			</File>
+			<File
+				RelativePath="compilazione\WallEditor.cpp">
+			</File>
+			<File
+				RelativePath="compilazione\WallEditor.h">
+			</File>
+			<File
+				RelativePath="compilazione\mainform.cpp">
+			</File>
+			<File
+				RelativePath="compilazione\mainform.h">
+			</File>
+		</Filter>
+		<Filter
+			Name="Forms"
+			Filter="ui"
+			ParseFiles="FALSE">
+			<File
+				RelativePath="About.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing About.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe About.ui -o compilazione\About.h &amp;&amp; $(QTDIR)\bin\uic.exe About.ui -i About.h -o compilazione\About.cpp &amp;&amp; $(QTDIR)\bin\moc.exe compilazione\About.h -o compilazione\moc_About.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="compilazione\About.h;compilazione\About.cpp;compilazione\moc_About.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="BallsEditor.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing BallsEditor.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe BallsEditor.ui -o compilazione\BallsEditor.h &amp;&amp; $(QTDIR)\bin\uic.exe BallsEditor.ui -i BallsEditor.h -o compilazione\BallsEditor.cpp &amp;&amp; $(QTDIR)\bin\moc.exe compilazione\BallsEditor.h -o compilazione\moc_BallsEditor.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="compilazione\BallsEditor.h;compilazione\BallsEditor.cpp;compilazione\moc_BallsEditor.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="EnvEditor.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing EnvEditor.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe EnvEditor.ui -o compilazione\EnvEditor.h &amp;&amp; $(QTDIR)\bin\uic.exe EnvEditor.ui -i EnvEditor.h -o compilazione\EnvEditor.cpp &amp;&amp; $(QTDIR)\bin\moc.exe compilazione\EnvEditor.h -o compilazione\moc_EnvEditor.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="compilazione\EnvEditor.h;compilazione\EnvEditor.cpp;compilazione\moc_EnvEditor.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="InitDialog.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing InitDialog.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe InitDialog.ui -o compilazione\InitDialog.h &amp;&amp; $(QTDIR)\bin\uic.exe InitDialog.ui -i InitDialog.h -o compilazione\InitDialog.cpp &amp;&amp; $(QTDIR)\bin\moc.exe compilazione\InitDialog.h -o compilazione\moc_InitDialog.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="compilazione\InitDialog.h;compilazione\InitDialog.cpp;compilazione\moc_InitDialog.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="WallEditor.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing WallEditor.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe WallEditor.ui -o compilazione\WallEditor.h &amp;&amp; $(QTDIR)\bin\uic.exe WallEditor.ui -i WallEditor.h -o compilazione\WallEditor.cpp &amp;&amp; $(QTDIR)\bin\moc.exe compilazione\WallEditor.h -o compilazione\moc_WallEditor.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="compilazione\WallEditor.h;compilazione\WallEditor.cpp;compilazione\moc_WallEditor.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="mainform.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing mainform.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe mainform.ui -o compilazione\mainform.h &amp;&amp; $(QTDIR)\bin\uic.exe mainform.ui -i mainform.h -o compilazione\mainform.cpp &amp;&amp; $(QTDIR)\bin\moc.exe compilazione\mainform.h -o compilazione\moc_mainform.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="compilazione\mainform.h;compilazione\mainform.cpp;compilazione\moc_mainform.cpp"/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="Resources"
+			Filter="cpp;ico;png;jpg;jpeg;gif;xpm;bmp;rc;ts"
+			ParseFiles="FALSE">
+			<File
+				RelativePath="images/Pang.png">
+			</File>
+			<File
+				RelativePath="images/camera.PNG">
+			</File>
+			<File
+				RelativePath="images/cubemap.png">
+			</File>
+			<File
+				RelativePath="images/exit.png">
+			</File>
+			<File
+				RelativePath="images/filenew.png">
+			</File>
+			<File
+				RelativePath="images/fileopen.png">
+			</File>
+			<File
+				RelativePath="images/filesave.png">
+			</File>
+			<File
+				RelativePath="images/palle.png">
+			</File>
+			<File
+				RelativePath="images/pause.PNG">
+			</File>
+			<File
+				RelativePath="images/piani.png">
+			</File>
+			<File
+				RelativePath="images/puntoEsc.png">
+			</File>
+			<File
+				RelativePath="images/puntoInt.png">
+			</File>
+			<File
+				RelativePath="images/rewind.PNG">
+			</File>
+			<File
+				RelativePath="images/shadows.PNG">
+			</File>
+			<File
+				RelativePath="images/trackball.PNG">
+			</File>
+			<File
+				RelativePath="images/zoomIn.PNG">
+			</File>
+			<File
+				RelativePath="images/zoomOut.PNG">
+			</File>
+			<File
+				RelativePath="compilazione\qmake_image_collection.cpp">
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

@@ -1,0 +1,73 @@
+<SceneGraph pu="0" pp="0" barmi="0" bvite="0" bfrutta="0" bbombe="0" btornado="0" cubeMapTexture="../data/mount.jpg">
+<Viste>
+<Vista numVista="0" x="25" y="20" z="91" />
+<Vista numVista="1" x="25" y="20" z="91" />
+<Vista numVista="2" x="25" y="20" z="91" />
+<Vista numVista="3" x="25" y="20" z="91" />
+<Vista numVista="4" x="25" y="20" z="91" />
+<Vista numVista="5" x="25" y="20" z="91" />
+</Viste>
+<GrPalla texture="" numballs="1" alpha="1">
+<Palla textured="0">
+<Sphere r="1" g="1" b="1" alpha="1" raggio="2" />
+</Palla>
+<Rimbalzo hmax="15" grav="-9.81"></Rimbalzo>
+<Spostamento dx="0" dz="0"></Spostamento>
+<Traslazione x="22.5" y="11.1" z="57.5"></Traslazione>
+</GrPalla>
+<GrAmb texture="" principale="1" deletable="240" type="16">
+<Muro textured="0" alpha ="1">
+<Paral r="1" g="1" b="1" dx="75" dy="1000" dz="1" texSideName="3131961357"></Paral>
+</Muro>
+<Traslazione x="0" y="0" z="0"></Traslazione>
+<Rotazione x="0" y="1" z="0" angle="0"></Rotazione>
+</GrAmb>
+<GrAmb texture="" principale="1" deletable="240" type="16">
+<Muro textured="0" alpha ="1">
+<Paral r="1" g="1" b="1" dx="1" dy="1000" dz="75" texSideName="3131961357"></Paral>
+</Muro>
+<Traslazione x="0" y="0" z="0"></Traslazione>
+<Rotazione x="0" y="1" z="0" angle="0"></Rotazione>
+</GrAmb>
+<GrAmb texture="" principale="1" deletable="240" type="16">
+<Muro textured="0" alpha ="1">
+<Paral r="1" g="1" b="1" dx="75" dy="1000" dz="1" texSideName="3131961357"></Paral>
+</Muro>
+<Traslazione x="0" y="0" z="75"></Traslazione>
+<Rotazione x="0" y="1" z="0" angle="0"></Rotazione>
+</GrAmb>
+<GrAmb texture="" principale="1" deletable="240" type="16">
+<Muro textured="0" alpha ="1">
+<Paral r="1" g="1" b="1" dx="1" dy="1000" dz="75" texSideName="3131961357"></Paral>
+</Muro>
+<Traslazione x="75" y="0" z="0"></Traslazione>
+<Rotazione x="0" y="1" z="0" angle="0"></Rotazione>
+</GrAmb>
+<GrAmb texture="" principale="1" deletable="0" type="9">
+<Pavimento spessore="1" textured="0" ncellor="15" ncellvert="15" lato="5" alpha="1">
+<Paral r="1" g="1" b="1" dx="75" dy="1" dz="75" texUpName="0"></Paral>
+</Pavimento>
+<Traslazione x="0" y="0" z="0"></Traslazione>
+<Rotazione x="0" y="1" z="0" angle="0"></Rotazione>
+</GrAmb>
+<GrAmb texture="" principale="0" deletable="0" type="9">
+<Pavimento spessore="1" textured="0" ncellor="3" ncellvert="3" lato="5" alpha="1">
+<Paral r="1" g="1" b="1" dx="15" dy="1" dz="15" texUpName="0"></Paral>
+</Pavimento>
+<Traslazione x="34" y="16" z="52"></Traslazione>
+<Rotazione x="0" y="1" z="0" angle="0"></Rotazione>
+</GrAmb>
+<GrAmb texture="" principale="0" deletable="240" type="21">
+<Scala npioli="21"></Scala>
+<Traslazione x="39.0989" y="6.12168" z="72.0417"></Traslazione>
+<Rotazione x="0" y="1" z="0" angle="0"></Rotazione>
+</GrAmb>
+<GrGiocat texture="">
+<Giocatore model="" texture="" nvite="5" />
+<Traslazione x="30" y="1.5" z="37.5"></Traslazione>
+</GrGiocat>
+<GrGiocat texture="">
+<Giocatore model="" texture="" nvite="5" />
+<Traslazione x="45" y="1.5" z="37.5"></Traslazione>
+</GrGiocat>
+</SceneGraph>

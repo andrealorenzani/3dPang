@@ -1,0 +1,9 @@
+heart 		(-90,1,0,0);
+argus 	0.01f
+apple 	0.01f 	(-90,1,0,0);
+banana 	0.01f 	(-90,1,0,0); sdraiata e (180,1,0,0) in piedi
+pear 	0.01f 	(-90,1,0,0);
+
+mrclock	0.5f	(-90,1,0,0); e (45,0,0,1);
+clock		(-90,1,0,0);
+bowball	0.01f 	(-90,1,0,0); ma conviene allora usare una palla nostra..

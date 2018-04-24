@@ -1,0 +1,389 @@
+<html>
+<head>
+<title>3d PANG - EDITOR</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#00004A" text="#FDA43B" link="#359CFB" vlink="#359CFB" alink="#359CFB">
+<div align="center"> 
+  <p align="center"><font face="Verdana, Arial, Helvetica, sans-serif"><img src="editor.PNG" width="325" height="111"><a name="editor"></a> 
+    </font></p>
+  <p align="center"><font face="Verdana, Arial, Helvetica, sans-serif"><strong>creato 
+    con QT 3.2.0</strong></font></p>
+  <p align="left"><font face="Verdana, Arial, Helvetica, sans-serif"><a href="../index.htm"><img src="sx.PNG" width="35" height="33" border="0"></a></font></p>
+  <table width="85%" border="0" cellspacing="5" cellpadding="5">
+    <tr> 
+      <td> <p><font size="+1" face="Verdana, Arial, Helvetica, sans-serif">&gt; 
+          <a href="#p1">Pavimento principale</a>.</font></p>
+        <p><font size="+1" face="Verdana, Arial, Helvetica, sans-serif"> &gt; 
+          <a href="#p2">Toolbar, viste di editing e immagine di sfondo</a>.</font></p>
+        <p><font size="+1" face="Verdana, Arial, Helvetica, sans-serif">&gt; <a href="#p3">Sfere: 
+          inserimento, modifica e rimozione</a>.</font></p>
+        <p><font size="+1" face="Verdana, Arial, Helvetica, sans-serif">&gt; <a href="#p4">Pavimenti: 
+          inserimento, modifica e rimozione</a>.</font></p>
+        <p><font size="+1" face="Verdana, Arial, Helvetica, sans-serif">&gt; <a href="#p5">Scale: 
+          inserimento, modifica e rimozione</a>.</font></p>
+        <p><font size="+1" face="Verdana, Arial, Helvetica, sans-serif">&gt; <a href="#p6">Mura: 
+          inserimento, modifica e rimozione</a>.</font></p>
+        <p><font size="+1" face="Verdana, Arial, Helvetica, sans-serif">&gt; <a href="#p7">Viste 
+          di gioco: impostazione dei tasti funzione F3-F8</a>.</font></p>
+        <p><font size="+1" face="Verdana, Arial, Helvetica, sans-serif">&gt; <a href="#p8">Giocatori: 
+          scelta e posizionamento</a>.</font></p>
+        <p><font size="+1" face="Verdana, Arial, Helvetica, sans-serif">&gt; <a href="#p9">Power 
+          Up: scelta della periodicit&agrave; di apparizione</a>.</font></p>
+        <p><font size="+1" face="Verdana, Arial, Helvetica, sans-serif">&gt; <a href="#p10">Mouse: 
+          utilizzo in fase di editing</a>.</font></p></td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+  <table width="85%" border="0" cellspacing="5" cellpadding="5">
+    <tr> 
+      <th width="90%"><font size="+1" face="Verdana, Arial, Helvetica, sans-serif">Pavimento 
+        principale<a name="p1"></a></font></th>
+      <td width="10%"><div align="right"><font face="Verdana, Arial, Helvetica, sans-serif"><a href="#editor"><img src="su.PNG" width="33" height="35" border="0"></a></font></div></td>
+    </tr>
+  </table>
+  <table width="85%" border="0" cellspacing="5" cellpadding="5">
+    <tr> 
+      <td><div align="justify"> 
+          <p align="justify"><font face="Verdana, Arial, Helvetica, sans-serif">Una 
+            volta lanciato, l'editor chiede prima di tutto di impostare le dimensioni 
+            del pavimento principale.</font></p>
+          <p align="center"><img src="init.jpg" width="391" height="287"></p>
+          <p align="justify"><font face="Verdana, Arial, Helvetica, sans-serif">Successivamente 
+            &egrave; possibile creare il proprio livello creando un nuovo documento 
+            o aprendone uno gi&agrave; esistente.</font></p>
+          <p align="justify"><font face="Verdana, Arial, Helvetica, sans-serif">Il 
+            form principale dell'editor si divide in due parti: a sinistra si 
+            trova il pannello dal quale creare e modificare oggetti, a destra 
+            una vista della scena che stiamo creando.</font></p>
+          <p align="justify"><font face="Verdana, Arial, Helvetica, sans-serif"><a href="main1.jpg">Snapshot 
+            Mainform</a>.</font></p>
+        </div>
+        </td>
+    </tr>
+  </table>
+  <p>&nbsp;</p><hr align="center" width="85%">
+  <p>&nbsp;</p>
+  <table width="85%" border="0" cellpadding="5" cellspacing="5">
+    <tr> 
+      <th width="90%"><font size="+1" face="Verdana, Arial, Helvetica, sans-serif">Toolbar, 
+        viste di editing e immagine di sfondo<a name="p2"></a></font></th>
+      <td width="10%"><div align="right"><font face="Verdana, Arial, Helvetica, sans-serif"><a href="#editor"><img src="su.PNG" width="33" height="35" border="0"></a></font></div></td>
+    </tr>
+  </table>
+  <table width="85%" border="0" cellspacing="5" cellpadding="5">
+    <tr> 
+      <td height="512"><div align="justify"> 
+          <p><font face="Verdana, Arial, Helvetica, sans-serif"><img src="toolbar.jpg" width="464" height="29"></font></p>
+          <p><font face="Verdana, Arial, Helvetica, sans-serif">Legenda:</font></p>
+          <table width="100%" height="83" >
+            <tr > 
+              <td width="49%"><font face="Verdana, Arial, Helvetica, sans-serif"><img src="filenew.png" width="29" height="28"> 
+                creare un nuovo livello,</font></td>
+              <td width="51%"><font face="Verdana, Arial, Helvetica, sans-serif"><img src="zoomIn.PNG" width="31" height="31"> 
+                <img src="zoomIn.PNG" width="31" height="31"> effettuare lo zoom 
+                in e lo zoom out,</font></td>
+            </tr>
+            <tr > 
+              <td><font face="Verdana, Arial, Helvetica, sans-serif"><img src="fileopen.png" width="30" height="28"> 
+                aprire un livello creato,</font></td>
+              <td><font face="Verdana, Arial, Helvetica, sans-serif"><img src="camera.PNG" width="31" height="31"> 
+                creare uno snapshot della scena,</font></td>
+            </tr>
+            <tr > 
+              <td><font face="Verdana, Arial, Helvetica, sans-serif"><img src="filesave.png" width="27" height="26"> 
+                salvare il livello corrente,</font></td>
+              <td><font face="Verdana, Arial, Helvetica, sans-serif"><img src="cubemap.png" width="31" height="31"> 
+                cambiare l'immagine della cubemap,</font></td>
+            </tr>
+            <tr> 
+              <td><font face="Verdana, Arial, Helvetica, sans-serif"><img src="pause.PNG" width="31" height="31"> 
+                bloccare l'animazione,</font></td>
+              <td><font face="Verdana, Arial, Helvetica, sans-serif"><img src="puntoEsc.png" width="32" height="32"> 
+                ottenere informazioni sui creatori di 3dPang,</font></td>
+            </tr>
+            <tr > 
+              <td><font face="Verdana, Arial, Helvetica, sans-serif"><img src="rewind.PNG" width="31" height="31"> 
+                far riprendere l'animazione dall'inizio,</font></td>
+              <td><font face="Verdana, Arial, Helvetica, sans-serif"><img src="puntoInt.png" width="32" height="32"> 
+                visualizzare questa guida di aiuto,</font></td>
+            </tr>
+            <tr> 
+              <td><font face="Verdana, Arial, Helvetica, sans-serif"><img src="trackball.PNG" width="31" height="31"> 
+                passare in modalit&agrave; trackball,</font></td>
+              <td><font face="Verdana, Arial, Helvetica, sans-serif"><img src="exit.png" width="32" height="32"> 
+                uscire dall'editor.</font></td>
+            </tr>
+            <tr > 
+              <td><font face="Verdana, Arial, Helvetica, sans-serif"><img src="shadows.PNG" width="31" height="31"> 
+                visualizzare le ombre,</font></td>
+              <td><img src="campaign.jpg" width="167" height="26"> <font face="Verdana, Arial, Helvetica, sans-serif"> 
+                aggiungere il livello corrente ad una sequenza di livelli (si 
+                trova nel men&ugrave;)</font></td>
+            </tr>
+          </table>
+          <p><font face="Verdana, Arial, Helvetica, sans-serif">Il punto in cui 
+            &egrave; centrata la vista &egrave; modificabile sia in modalit&agrave; 
+            selezione che in modalit&agrave; trackball con un <strong>doppio click</strong> 
+            del mouse nel punto desiderato.</font></p>
+          </div></td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+  <hr align="center" width="85%">
+  <p>&nbsp;</p>
+  <table width="85%" border="0" cellpadding="5" cellspacing="5">
+    <tr> 
+      <th width="90%"><font size="+1" face="Verdana, Arial, Helvetica, sans-serif">Sfere: 
+        inserimento, modifica e rimozione<a name="p3" id="p3"></a></font></th>
+      <td width="10%"><div align="right"><font face="Verdana, Arial, Helvetica, sans-serif"><a href="#editor"><img src="su.PNG" width="33" height="35" border="0"></a></font></div></td>
+    </tr>
+  </table>
+  <table width="85%" border="0" cellspacing="5" cellpadding="5">
+    <tr> 
+      <td width="57%" valign="top"><div align="justify"> 
+          <p align="justify"><font face="Verdana, Arial, Helvetica, sans-serif">Per 
+            creare delle sfere sopra alcune celle del pavimento:</font></p>
+          <p align="justify"><font face="Verdana, Arial, Helvetica, sans-serif">1. 
+            assicurarsi che il pulsante Trackball non sia abilitato,</font></p>
+          <p align="justify"><font face="Verdana, Arial, Helvetica, sans-serif">2. 
+            selezionare una o pi&ugrave; celle,</font></p>
+          <p align="justify"><font face="Verdana, Arial, Helvetica, sans-serif">3. 
+            premere il relativo pulsante e un dialog per la creazione delle sfere 
+            verr&agrave; visualizzato.</font></p>
+          <p align="justify"><font face="Verdana, Arial, Helvetica, sans-serif">Per 
+            modificare le sfere:</font></p>
+        </div>
+        <p align="justify"><font face="Verdana, Arial, Helvetica, sans-serif">1. 
+          selezionare le sfere desiderate,</font></p>
+        <p align="justify"><font face="Verdana, Arial, Helvetica, sans-serif">&gt; 
+          modificare le impostazioni di colore e texture,</font></p>
+        <p align="justify"><font face="Verdana, Arial, Helvetica, sans-serif">&gt; 
+          trascinare le sfere nella posizione desiderata utilizzando il mouse,</font></p>
+        <p align="justify"><font face="Verdana, Arial, Helvetica, sans-serif">&gt; 
+          premere il relativo pulsante per l'eliminazione.</font></p>
+        <p align="justify"><font face="Verdana, Arial, Helvetica, sans-serif">Snapshot 
+          <a href="main11.jpg">tab</a> e <a href="balls.jpg">dialog</a> relativi 
+          alle sfere.</font></p>
+        </td>
+    </tr>
+  </table>
+  <p>&nbsp;</p><hr align="center" width="85%">
+  <p><font size="+1" face="Verdana, Arial, Helvetica, sans-serif"><a name="p4"></a></font></p>
+  <table width="85%" border="0" cellpadding="5" cellspacing="5">
+    <tr> 
+      <th width="90%"><font size="+1" face="Verdana, Arial, Helvetica, sans-serif">Pavimenti: 
+        inserimento, modifica e rimozione</font></th>
+      <td width="10%"><div align="right"><font face="Verdana, Arial, Helvetica, sans-serif"><a href="#editor"><img src="su.PNG" width="33" height="35" border="0"></a></font></div></td>
+    </tr>
+  </table>
+  <table width="85%" border="0" cellspacing="5" cellpadding="5">
+    <tr valign="top"> 
+      <td width="57%"><div align="justify"> 
+          <p><font face="Verdana, Arial, Helvetica, sans-serif">Per creare un 
+            pavimento premere il relativo pulsante per l'inserzione e un dialog 
+            verr&agrave; visualizzato.</font></p>
+          <p><font face="Verdana, Arial, Helvetica, sans-serif">Per modificare 
+            pavimenti:</font></p>
+          <p><font face="Verdana, Arial, Helvetica, sans-serif">1. assicurarsi 
+            che il pulsante Trackball non sia abilitato,</font></p>
+          <p><font face="Verdana, Arial, Helvetica, sans-serif">2. selezionare 
+            i pavimenti desiderati,</font></p>
+          <p><font face="Verdana, Arial, Helvetica, sans-serif">&gt; modificare 
+            le impostazioni di colore e texture,</font></p>
+          <p><font face="Verdana, Arial, Helvetica, sans-serif">&gt; trascinare 
+            i pavimenti nella posizione desiderata con il mouse,</font></p>
+          <p><font face="Verdana, Arial, Helvetica, sans-serif">&gt; modificarne 
+            l'altezza con la rotellina del mouse,</font></p>
+          <p><font face="Verdana, Arial, Helvetica, sans-serif">&gt; premere il 
+            relativo pulsante per l'eliminazione.</font></p>
+          <p><font face="Verdana, Arial, Helvetica, sans-serif">Snapshot <a href="main2.jpg">tab</a> 
+            e <a href="floors.jpg">dialog</a> relativi ai pavimenti.</font></p>
+        </div></td>
+    </tr>
+  </table>
+  <p>&nbsp;</p><hr align="center" width="85%">
+  <p><font size="+1" face="Verdana, Arial, Helvetica, sans-serif"><a name="p5"></a></font></p>
+  <table width="85%" border="0" cellpadding="5" cellspacing="5">
+    <tr> 
+      <th width="90%"><font size="+1" face="Verdana, Arial, Helvetica, sans-serif">Scale: 
+        inserimento, modifica e rimozione</font></th>
+      <td width="10%"><div align="right"><font face="Verdana, Arial, Helvetica, sans-serif"><a href="#editor"><img src="su.PNG" width="33" height="35" border="0"></a></font></div></td>
+    </tr>
+  </table>
+  <table width="85%" border="0" cellspacing="5" cellpadding="5">
+    <tr> 
+      <td width="83%"><div align="justify">
+          <p><font face="Verdana, Arial, Helvetica, sans-serif">Con il tab relativo 
+            ai pavimenti, &egrave; possibile aggiungere scale alla nostra scena.</font></p>
+          <p><font face="Verdana, Arial, Helvetica, sans-serif"> Per creare una 
+            scala premere il relativo pulsante e posizionare la scala dove desiderato.</font></p>
+          <p><font face="Verdana, Arial, Helvetica, sans-serif"> Per modificare 
+            una scala:</font></p>
+          <p><font face="Verdana, Arial, Helvetica, sans-serif"> 1. assicurarsi 
+            che il pulsante Trackball non sia abilitato,</font></p>
+          <p><font face="Verdana, Arial, Helvetica, sans-serif">2. selezionare 
+            la scala,</font></p>
+          <p><font face="Verdana, Arial, Helvetica, sans-serif">&gt; trascinarla 
+            nella posizione desiderata con il mouse,</font></p>
+          <p><font face="Verdana, Arial, Helvetica, sans-serif">&gt; modificare 
+            il numero di pioli con la rotellina del mouse,</font></p>
+          <p><font face="Verdana, Arial, Helvetica, sans-serif">&gt; ruotare di 
+            90&deg; cliccando il tasto destro del mouse,</font></p>
+          <p><font face="Verdana, Arial, Helvetica, sans-serif">&gt; premere il 
+            relativo pulsante per l'eliminazione.</font></p>
+        </div></td>
+      <td width="17%"><div align="center"><img src="stair.jpg" width="157" height="355"></div></td>
+    </tr>
+  </table>
+  <p>&nbsp;</p><hr align="center" width="85%">
+  <p><font size="+1" face="Verdana, Arial, Helvetica, sans-serif"><a name="p6"></a></font></p>
+  <table width="85%" border="0" cellpadding="5" cellspacing="5">
+    <tr> 
+      <th width="90%"><font size="+1" face="Verdana, Arial, Helvetica, sans-serif">Mura: 
+        inserimento, modifica e rimozione</font></th>
+      <td width="10%"><div align="right"><font face="Verdana, Arial, Helvetica, sans-serif"><a href="#editor"><img src="su.PNG" width="33" height="35" border="0"></a></font></div></td>
+    </tr>
+  </table>
+  <table width="85%" border="0" cellspacing="5" cellpadding="5">
+    <tr> 
+      <td><div align="justify"> 
+          <p><font face="Verdana, Arial, Helvetica, sans-serif"> Per creare un 
+            muro premere il relativo pulsante per l'inserzione e il relativo dialog 
+            verr&agrave; visualizzato.</font></p>
+          <p><font face="Verdana, Arial, Helvetica, sans-serif">La modifica delle 
+            mura avviene con la stessa modalit&agrave; vista per i pavimenti.</font></p>
+          <p><font face="Verdana, Arial, Helvetica, sans-serif">Snapshot <a href="main3.jpg">tab</a> 
+            e <a href="walls.jpg">dialog</a> relativi alle mura.</font></p>
+        </div></td>
+    </tr>
+  </table>
+  <p>&nbsp;</p><hr align="center" width="85%">
+  <p><font size="+1" face="Verdana, Arial, Helvetica, sans-serif"><a name="p7"></a></font></p>
+  <table width="85%" border="0" cellpadding="5" cellspacing="5">
+    <tr> 
+      <th width="90%"><font size="+1" face="Verdana, Arial, Helvetica, sans-serif">Viste 
+        di gioco: impostazione dei tasti funzione F3-F8</font></th>
+      <td width="10%"><div align="right"><font face="Verdana, Arial, Helvetica, sans-serif"><a href="#editor"><img src="su.PNG" width="33" height="35" border="0"></a></font></div></td>
+    </tr>
+  </table>
+  <table width="85%" border="0" cellspacing="5" cellpadding="5">
+    <tr> 
+      <td><div align="justify">
+          <p><font face="Verdana, Arial, Helvetica, sans-serif"> I tasti funzione 
+            F3,..,F8 possono essere impostati per modificare la vista durante 
+            il gioco.</font></p>
+          <p><font face="Verdana, Arial, Helvetica, sans-serif">I primi tre tasti 
+            funzione sono relativi al primo giocatore, mentre i rimanenti tre 
+            sono relativi al secondo giocatore.</font></p>
+          <p><font face="Verdana, Arial, Helvetica, sans-serif">Dall'editor &egrave; 
+            possibile scegliere da che posizione seguire un giocatore in movimento 
+            durante il gioco.</font></p>
+          <p><font face="Verdana, Arial, Helvetica, sans-serif">Per facilitare 
+            la scelta della posizione, &egrave; presente una piccola preview della 
+            scena contenente al centro un parallelepipedo al posto del giocatore.</font></p>
+          <p><font face="Verdana, Arial, Helvetica, sans-serif">Snaphot <a href="main5.jpg">tab</a> 
+            relativo alle viste di gioco.</font></p>
+        </div></td>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+  <p>&nbsp;</p><hr align="center" width="85%">
+  <p><font size="+1" face="Verdana, Arial, Helvetica, sans-serif"><a name="p8"></a></font></p>
+  <table width="85%" border="0" cellpadding="5" cellspacing="5">
+    <tr> 
+      <th width="90%"><font size="+1" face="Verdana, Arial, Helvetica, sans-serif">Giocatori: 
+        scelta e posizionamento</font></th>
+      <td width="10%"><div align="right"><font face="Verdana, Arial, Helvetica, sans-serif"><a href="#editor"><img src="su.PNG" width="33" height="35" border="0"></a></font></div></td>
+    </tr>
+  </table>
+  <table width="85%" border="0" cellspacing="5" cellpadding="5">
+    <tr> 
+      <td><div align="justify"> 
+          <p><font face="Verdana, Arial, Helvetica, sans-serif">Dall'apposito</font><font face="Verdana, Arial, Helvetica, sans-serif"> 
+            tab &egrave; possibile impostare la posizione, il modellino e la texture 
+            di entrambi giocatori.</font></p>
+          <p><font face="Verdana, Arial, Helvetica, sans-serif">Per posizionare 
+            un giocatore:</font></p>
+          <p><font face="Verdana, Arial, Helvetica, sans-serif">1. scegliere cosa 
+            posizionare tra numero e modello (se quest'ultimo &egrave; gi&agrave; 
+            stato impostato),</font></p>
+          <p><font face="Verdana, Arial, Helvetica, sans-serif">2. premere il 
+            pulsante <em>Posiziona</em>,</font></p>
+          <p><font face="Verdana, Arial, Helvetica, sans-serif">3. scegliere la 
+            posizione iniziale nella scena.</font></p>
+          <p><font face="Verdana, Arial, Helvetica, sans-serif">Snapshot <a href="main4.jpg">tab</a> 
+            relativo al posizionamento dei giocatori.</font></p>
+        </div></td>
+    </tr>
+  </table>
+  <p>&nbsp;</p><hr align="center" width="85%">
+  <p><font size="+1" face="Verdana, Arial, Helvetica, sans-serif"><a name="p9"></a></font></p>
+  <table width="85%" border="0" cellpadding="5" cellspacing="5">
+    <tr> 
+      <th width="90%"><font size="+1" face="Verdana, Arial, Helvetica, sans-serif">Power 
+        Up: scelta della periodicit&agrave; di apparizione</font></th>
+      <td width="10%"><div align="right"><font face="Verdana, Arial, Helvetica, sans-serif"><a href="#editor"><img src="su.PNG" width="33" height="35" border="0"></a></font></div></td>
+    </tr>
+  </table>
+  <table width="85%" border="0" cellspacing="5" cellpadding="5">
+    <tr> 
+      <td><div align="justify"> 
+          <p><font face="Verdana, Arial, Helvetica, sans-serif"> Dall'apposito 
+            tab &egrave; possibile scegliere le probabilit&agrave; con le quali 
+            i power up si manifestano.</font></p>
+          <p><font face="Verdana, Arial, Helvetica, sans-serif">Inizialmente si 
+            pu&ograve; impostare la probabilit&agrave; che tutti i power up appaiano, 
+            successivamente quale percentuale di positivi (bonus) e, per differenza, 
+            di negativi.</font></p>
+          <p><font face="Verdana, Arial, Helvetica, sans-serif">All'interno di 
+            entrambe le categorie, si pu&ograve; impostare la frequenza di apparizione 
+            degli elementi che ne fanno parte.</font></p>
+          <p><font face="Verdana, Arial, Helvetica, sans-serif">Snapshot <a href="main6.jpg">tab</a> 
+            relativo ai power up.</font></p>
+        </div></td>
+    </tr>
+  </table>
+  <p>&nbsp;</p><hr align="center" width="85%">
+  <p><font size="+1" face="Verdana, Arial, Helvetica, sans-serif"><a name="p10"></a></font></p>
+  <table width="85%" border="0" cellpadding="5" cellspacing="5">
+    <tr> 
+      <th width="90%"><font size="+1" face="Verdana, Arial, Helvetica, sans-serif">Mouse: 
+        utilizzo in fase di editing</font></th>
+      <td width="10%"><div align="right"><font face="Verdana, Arial, Helvetica, sans-serif"><a href="#editor"><img src="su.PNG" width="33" height="35" border="0"></a></font></div></td>
+    </tr>
+  </table>
+  <table width="85%" border="0" cellspacing="5" cellpadding="5">
+    <tr>
+      <td width="55%"><p align="justify"><font face="Verdana, Arial, Helvetica, sans-serif">Nell'editor, 
+          il mouse pu&ograve; essere utilizzato in modalit&agrave; &#8220;<em>selezione</em>&#8221; 
+          per selezionare gli elementi della scena e in modalit&agrave; &#8220;<em>trackball</em>&#8221; 
+          per ruotare la trackball.</font></p>
+        <p align="justify"><font face="Verdana, Arial, Helvetica, sans-serif">In 
+          entrambe le modalit&agrave; il <em>doppio click</em> modifica il centro 
+          di vista durante l'editing.</font></p>
+        <p align="justify"><font face="Verdana, Arial, Helvetica, sans-serif">Una 
+          volta selezionati uno o pi&ugrave; oggetti, tramite il mouse &egrave; 
+          possibile spostarli:</font></p>
+        <p align="justify"><font face="Verdana, Arial, Helvetica, sans-serif">&gt; 
+          con il tasto sinistro si modificano le coordinate X e Z,</font></p>
+        <p align="justify"><font face="Verdana, Arial, Helvetica, sans-serif">&gt; 
+          con la rotellina si modifica la coordinata Y.</font></p>
+        <p align="justify"><font face="Verdana, Arial, Helvetica, sans-serif">Un 
+          caso particolare &egrave; rappresentato dalle scale:</font></p>
+        <p align="justify"><font face="Verdana, Arial, Helvetica, sans-serif">&gt; 
+          cliccando con il tasto destro le scale selezionate ruotano di 90&deg; 
+          sul piano XZ,</font></p>
+        <p align="justify"><font face="Verdana, Arial, Helvetica, sans-serif">&gt; 
+          con la rotellina si modifica il numero di pioli di cui sono composte.</font></p>
+        </td>
+      <td width="45%"><div align="justify"> 
+          <p align="center"><img src="mouse.jpg" width="100%" height="100%"></p>
+          </div></td>
+    </tr>
+  </table>
+  
+</div>
+</body>
+</html>

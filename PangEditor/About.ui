@@ -1,0 +1,413 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>about</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>about</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>1</y>
+            <width>340</width>
+            <height>220</height>
+        </rect>
+    </property>
+    <property name="sizePolicy">
+        <sizepolicy>
+            <hsizetype>0</hsizetype>
+            <vsizetype>0</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+    </property>
+    <property name="minimumSize">
+        <size>
+            <width>340</width>
+            <height>220</height>
+        </size>
+    </property>
+    <property name="maximumSize">
+        <size>
+            <width>340</width>
+            <height>220</height>
+        </size>
+    </property>
+    <property name="baseSize">
+        <size>
+            <width>340</width>
+            <height>220</height>
+        </size>
+    </property>
+    <property name="paletteBackgroundColor">
+        <color>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+        </color>
+    </property>
+    <property name="caption">
+        <string>3dPang - About..</string>
+    </property>
+    <widget class="QLabel">
+        <property name="name">
+            <cstring>textLabel2</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>160</x>
+                <y>29</y>
+                <width>170</width>
+                <height>39</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>&lt;font face="Tahoma" color="#55ff00" size="+2"&gt;&lt;b&gt;Andrea Lorenzani&lt;/b&gt;&lt;/font&gt;&lt;br&gt;
+&lt;font face="Tahoma" color="#ffffff"&gt;vonatar@katamail.com&lt;/font&gt;</string>
+        </property>
+        <property name="toolTip" stdset="0">
+            <string>lorenzan@cli.di.unipi.it</string>
+        </property>
+    </widget>
+    <widget class="QLabel">
+        <property name="name">
+            <cstring>textLabel2_2</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>160</x>
+                <y>73</y>
+                <width>170</width>
+                <height>39</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>&lt;font color="#ffaaff" size="+2" face="Tahoma"&gt;&lt;b&gt;Eva Tamburini&lt;/b&gt;&lt;/font&gt;&lt;br&gt;
+&lt;font face="Tahoma" color="#ffffff"&gt;evagnu@virgilio.it&lt;/font&gt;</string>
+        </property>
+        <property name="toolTip" stdset="0">
+            <string>tamburin@cli.di.unipi.it</string>
+        </property>
+    </widget>
+    <widget class="QLabel">
+        <property name="name">
+            <cstring>textLabel3</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>30</x>
+                <y>129</y>
+                <width>191</width>
+                <height>62</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>&lt;font color="#aaffff" size="+1" face="Tahoma"&gt;&lt;b&gt;Costruzione di Interfacce&lt;/b&gt;&lt;br&gt;a.a. 2003/2004&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;font color="#ffaa00" size="+1" face="Tahoma"&gt;Docente Paolo Cignoni&lt;/font&gt;&lt;/font&gt;</string>
+        </property>
+    </widget>
+    <widget class="QPushButton">
+        <property name="name">
+            <cstring>OK</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>234</x>
+                <y>152</y>
+                <width>70</width>
+                <height>30</height>
+            </rect>
+        </property>
+        <property name="paletteForegroundColor">
+            <color>
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+            </color>
+        </property>
+        <property name="palette">
+            <palette>
+                <active>
+                    <color>
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>212</red>
+                        <green>208</green>
+                        <blue>200</blue>
+                    </color>
+                    <color>
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>233</red>
+                        <green>231</green>
+                        <blue>227</blue>
+                    </color>
+                    <color>
+                        <red>106</red>
+                        <green>104</green>
+                        <blue>100</blue>
+                    </color>
+                    <color>
+                        <red>141</red>
+                        <green>138</green>
+                        <blue>133</blue>
+                    </color>
+                    <color>
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>0</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>0</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>0</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>0</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>128</blue>
+                    </color>
+                    <color>
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>0</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>0</blue>
+                    </color>
+                </active>
+                <disabled>
+                    <color>
+                        <red>128</red>
+                        <green>128</green>
+                        <blue>128</blue>
+                    </color>
+                    <color>
+                        <red>212</red>
+                        <green>208</green>
+                        <blue>200</blue>
+                    </color>
+                    <color>
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>243</red>
+                        <green>239</green>
+                        <blue>230</blue>
+                    </color>
+                    <color>
+                        <red>106</red>
+                        <green>104</green>
+                        <blue>100</blue>
+                    </color>
+                    <color>
+                        <red>141</red>
+                        <green>138</green>
+                        <blue>133</blue>
+                    </color>
+                    <color>
+                        <red>128</red>
+                        <green>128</green>
+                        <blue>128</blue>
+                    </color>
+                    <color>
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>0</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>0</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>0</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>0</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>128</blue>
+                    </color>
+                    <color>
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>255</red>
+                        <green>0</green>
+                        <blue>255</blue>
+                    </color>
+                </disabled>
+                <inactive>
+                    <color>
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>212</red>
+                        <green>208</green>
+                        <blue>200</blue>
+                    </color>
+                    <color>
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>243</red>
+                        <green>239</green>
+                        <blue>230</blue>
+                    </color>
+                    <color>
+                        <red>106</red>
+                        <green>104</green>
+                        <blue>100</blue>
+                    </color>
+                    <color>
+                        <red>141</red>
+                        <green>138</green>
+                        <blue>133</blue>
+                    </color>
+                    <color>
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>0</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>0</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>0</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>0</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>128</blue>
+                    </color>
+                    <color>
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>255</red>
+                        <green>0</green>
+                        <blue>255</blue>
+                    </color>
+                </inactive>
+            </palette>
+        </property>
+        <property name="text">
+            <string>&amp;OK</string>
+        </property>
+        <property name="accel">
+            <string>Alt+O</string>
+        </property>
+    </widget>
+    <widget class="QLabel">
+        <property name="name">
+            <cstring>pixmapLabel1</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>30</x>
+                <y>30</y>
+                <width>100</width>
+                <height>70</height>
+            </rect>
+        </property>
+        <property name="pixmap">
+            <pixmap>Pang.png</pixmap>
+        </property>
+        <property name="scaledContents">
+            <bool>true</bool>
+        </property>
+    </widget>
+</widget>
+<connections>
+    <connection>
+        <sender>OK</sender>
+        <signal>clicked()</signal>
+        <receiver>about</receiver>
+        <slot>close()</slot>
+    </connection>
+</connections>
+<pixmapinproject/>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

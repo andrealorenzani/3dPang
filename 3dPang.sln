@@ -1,0 +1,27 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PangEditor", "PangEditor\PangEditor.vcproj", "{76E93435-5C1C-4334-929C-0A8F4D85FE4C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PangPlayer", "PangPlayer\PangPlayer.vcproj", "{82FD73E1-0AAB-4698-B1F7-E5EECA6F18B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{76E93435-5C1C-4334-929C-0A8F4D85FE4C}.Debug.ActiveCfg = Debug|Win32
+		{76E93435-5C1C-4334-929C-0A8F4D85FE4C}.Debug.Build.0 = Debug|Win32
+		{76E93435-5C1C-4334-929C-0A8F4D85FE4C}.Release.ActiveCfg = Debug|Win32
+		{76E93435-5C1C-4334-929C-0A8F4D85FE4C}.Release.Build.0 = Debug|Win32
+		{82FD73E1-0AAB-4698-B1F7-E5EECA6F18B8}.Debug.ActiveCfg = Debug|Win32
+		{82FD73E1-0AAB-4698-B1F7-E5EECA6F18B8}.Debug.Build.0 = Debug|Win32
+		{82FD73E1-0AAB-4698-B1F7-E5EECA6F18B8}.Release.ActiveCfg = Debug|Win32
+		{82FD73E1-0AAB-4698-B1F7-E5EECA6F18B8}.Release.Build.0 = Debug|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
