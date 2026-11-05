@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Level version="2" powerUpChance="0" bonusChance="0" weaponWeight="0" lifeWeight="0" fruitWeight="0" bombWeight="0" tornadoWeight="0" skybox="skyboxes/mount.jpg">
+  <Views>
+    <View index="0" x="25" y="20" z="91" />
+    <View index="1" x="25" y="20" z="91" />
+    <View index="2" x="25" y="20" z="91" />
+    <View index="3" x="25" y="20" z="91" />
+    <View index="4" x="25" y="20" z="91" />
+    <View index="5" x="25" y="20" z="91" />
+  </Views>
+  <Ball texture="" children="1" alpha="1">
+    <Sphere radius="2" r="1" g="1" b="1" alpha="1" textured="0" />
+    <Bounce maxHeight="15" gravity="-9.81" />
+    <Movement dx="0" dz="0" />
+    <Position x="22.5" y="11.1" z="57.5" />
+  </Ball>
+  <Environment kind="wall" texture="" main="1" destructible="240">
+    <Wall textured="0" alpha="1">
+      <Box dx="75" dy="1000" dz="1" r="1" g="1" b="1" />
+    </Wall>
+    <Position x="0" y="0" z="0" />
+    <Rotation x="0" y="1" z="0" angle="0" />
+  </Environment>
+  <Environment kind="wall" texture="" main="1" destructible="240">
+    <Wall textured="0" alpha="1">
+      <Box dx="1" dy="1000" dz="75" r="1" g="1" b="1" />
+    </Wall>
+    <Position x="0" y="0" z="0" />
+    <Rotation x="0" y="1" z="0" angle="0" />
+  </Environment>
+  <Environment kind="wall" texture="" main="1" destructible="240">
+    <Wall textured="0" alpha="1">
+      <Box dx="75" dy="1000" dz="1" r="1" g="1" b="1" />
+    </Wall>
+    <Position x="0" y="0" z="75" />
+    <Rotation x="0" y="1" z="0" angle="0" />
+  </Environment>
+  <Environment kind="wall" texture="" main="1" destructible="240">
+    <Wall textured="0" alpha="1">
+      <Box dx="1" dy="1000" dz="75" r="1" g="1" b="1" />
+    </Wall>
+    <Position x="75" y="0" z="0" />
+    <Rotation x="0" y="1" z="0" angle="0" />
+  </Environment>
+  <Environment kind="floor" texture="" main="1" destructible="0">
+    <Floor cellsX="15" cellsZ="15" cellSize="5" thickness="1" textured="0" alpha="1">
+      <Box dx="75" dy="1" dz="75" r="1" g="1" b="1" />
+    </Floor>
+    <Position x="0" y="0" z="0" />
+    <Rotation x="0" y="1" z="0" angle="0" />
+  </Environment>
+  <Environment kind="floor" texture="" main="0" destructible="0">
+    <Floor cellsX="3" cellsZ="3" cellSize="5" thickness="1" textured="0" alpha="1">
+      <Box dx="15" dy="1" dz="15" r="1" g="1" b="1" />
+    </Floor>
+    <Position x="34" y="16" z="52" />
+    <Rotation x="0" y="1" z="0" angle="0" />
+  </Environment>
+  <Environment kind="ladder" texture="" main="0" destructible="240">
+    <Ladder rungs="21" />
+    <Position x="39.0989" y="6.12168" z="72.0417" />
+    <Rotation x="0" y="1" z="0" angle="0" />
+  </Environment>
+  <Player>
+    <Model file="" skin="" lives="5" />
+    <Position x="30" y="1.5" z="37.5" />
+  </Player>
+  <Player>
+    <Model file="" skin="" lives="5" />
+    <Position x="45" y="1.5" z="37.5" />
+  </Player>
+</Level>

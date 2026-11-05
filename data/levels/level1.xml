@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Level version="2" powerUpChance="90" bonusChance="78" weaponWeight="15" lifeWeight="5" fruitWeight="75" bombWeight="45" tornadoWeight="45" skybox="skyboxes/mount.jpg">
+  <Views>
+    <View index="0" x="25" y="20" z="91" />
+    <View index="1" x="25" y="20" z="91" />
+    <View index="2" x="25" y="20" z="91" />
+    <View index="3" x="25" y="20" z="91" />
+    <View index="4" x="25" y="20" z="91" />
+    <View index="5" x="25" y="20" z="91" />
+  </Views>
+  <Ball texture="textures/pollonina.jpg" children="2" alpha="1">
+    <Sphere radius="4" r="1" g="1" b="1" alpha="1" textured="1" />
+    <Bounce maxHeight="23.4375" gravity="-127.738" />
+    <Movement dx="-0.6655" dz="-3.3275" />
+    <Position x="13.5" y="23.4333" z="59.5" />
+  </Ball>
+  <Ball texture="textures/supertelegattone.jpg" children="2" alpha="1">
+    <Sphere radius="4" r="1" g="1" b="1" alpha="1" textured="1" />
+    <Bounce maxHeight="23.4375" gravity="-48.1965" />
+    <Movement dx="-1.331" dz="3.3275" />
+    <Position x="59.5" y="29.1" z="19.5" />
+  </Ball>
+  <Environment kind="wall" texture="" main="1" destructible="1">
+    <Wall textured="0" alpha="1">
+      <Box dx="75" dy="1000" dz="1" r="1" g="1" b="1" />
+    </Wall>
+    <Position x="0" y="0" z="0" />
+    <Rotation x="0" y="1" z="0" angle="0" />
+  </Environment>
+  <Environment kind="wall" texture="" main="1" destructible="1">
+    <Wall textured="0" alpha="1">
+      <Box dx="1" dy="1000" dz="75" r="1" g="1" b="1" />
+    </Wall>
+    <Position x="0" y="0" z="0" />
+    <Rotation x="0" y="1" z="0" angle="0" />
+  </Environment>
+  <Environment kind="wall" texture="" main="1" destructible="1">
+    <Wall textured="0" alpha="1">
+      <Box dx="75" dy="1000" dz="1" r="1" g="1" b="1" />
+    </Wall>
+    <Position x="0" y="0" z="75" />
+    <Rotation x="0" y="1" z="0" angle="0" />
+  </Environment>
+  <Environment kind="wall" texture="" main="1" destructible="1">
+    <Wall textured="0" alpha="1">
+      <Box dx="1" dy="1000" dz="75" r="1" g="1" b="1" />
+    </Wall>
+    <Position x="75" y="0" z="0" />
+    <Rotation x="0" y="1" z="0" angle="0" />
+  </Environment>
+  <Environment kind="floor" texture="textures/skulls.jpg" main="1" destructible="0">
+    <Floor cellsX="15" cellsZ="15" cellSize="5" thickness="1" textured="1" alpha="1">
+      <Box dx="75" dy="1" dz="75" r="1" g="1" b="1" />
+    </Floor>
+    <Position x="0" y="0" z="0" />
+    <Rotation x="0" y="1" z="0" angle="0" />
+  </Environment>
+  <Environment kind="wall" texture="skyboxes/haze_negy.jpg" main="0" destructible="0">
+    <Wall textured="1" alpha="1">
+      <Box dx="5" dy="9" dz="35" r="1" g="1" b="1" />
+    </Wall>
+    <Position x="34" y="0" z="21" />
+    <Rotation x="0" y="1" z="0" angle="0" />
+  </Environment>
+  <Environment kind="floor" texture="skyboxes/uffizi_negy.jpg" main="0" destructible="0">
+    <Floor cellsX="3" cellsZ="3" cellSize="5" thickness="1" textured="1" alpha="1">
+      <Box dx="15" dy="1" dz="15" r="1" g="1" b="1" />
+    </Floor>
+    <Position x="6" y="12.3333" z="52" />
+    <Rotation x="0" y="1" z="0" angle="0" />
+  </Environment>
+  <Environment kind="ladder" texture="" main="0" destructible="1">
+    <Ladder rungs="20" />
+    <Position x="21.3912" y="2.31125" z="63.152" />
+    <Rotation x="0" y="1" z="0" angle="90" />
+  </Environment>
+  <Environment kind="floor" texture="textures/gras.jpg" main="0" destructible="0">
+    <Floor cellsX="3" cellsZ="3" cellSize="5" thickness="1" textured="1" alpha="1">
+      <Box dx="15" dy="1" dz="15" r="1" g="1" b="1" />
+    </Floor>
+    <Position x="52" y="12" z="12" />
+    <Rotation x="0" y="1" z="0" angle="0" />
+  </Environment>
+  <Environment kind="ladder" texture="" main="0" destructible="1">
+    <Ladder rungs="18" />
+    <Position x="57.6202" y="2.16761" z="28.8648" />
+    <Rotation x="0" y="1" z="0" angle="0" />
+  </Environment>
+  <Player>
+    <Model file="" skin="" lives="5" />
+    <Position x="30" y="1.5" z="37.5" />
+  </Player>
+  <Player>
+    <Model file="" skin="" lives="5" />
+    <Position x="45" y="1.5" z="37.5" />
+  </Player>
+</Level>

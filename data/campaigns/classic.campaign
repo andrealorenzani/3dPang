@@ -1,0 +1,5 @@
+# 3dPang campaign: one level file per line, relative to data/levels
+bombs.xml
+build.xml
+woods.xml
+bubble.xml

@@ -1,0 +1,21 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource prefix="/">
+    <file>icons/about.png</file>
+    <file>icons/balls.png</file>
+    <file>icons/camera.png</file>
+    <file>icons/cubemap.png</file>
+    <file>icons/exit.png</file>
+    <file>icons/filenew.png</file>
+    <file>icons/fileopen.png</file>
+    <file>icons/filesave.png</file>
+    <file>icons/floors.png</file>
+    <file>icons/help.png</file>
+    <file>icons/logo.png</file>
+    <file>icons/pause.png</file>
+    <file>icons/rewind.png</file>
+    <file>icons/shadows.png</file>
+    <file>icons/trackball.png</file>
+    <file>icons/zoomin.png</file>
+    <file>icons/zoomout.png</file>
+</qresource>
+</RCC>

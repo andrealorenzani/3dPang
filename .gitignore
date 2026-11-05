@@ -1,32 +1,33 @@
-# Prerequisites
-*.d
+# Build trees
+/build/
+/out/
+cmake-build-*/
+CMakeUserPresets.json
+CMakeLists.txt.user*
+compile_commands.json
 
-# Compiled Object files
-*.slo
-*.lo
+# IDEs
+.idea/
+.vs/
+.vscode/
+*.suo
+*.user
+
+# Compiled files
 *.o
 *.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
+*.a
+*.lib
 *.so
 *.dylib
 *.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
 *.exe
-*.out
-*.app
+*.pdb
+*.ilk
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Python
+__pycache__/
