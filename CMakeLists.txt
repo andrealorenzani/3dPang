@@ -195,6 +195,15 @@ install(DIRECTORY data/ DESTINATION ${PANG3D_INSTALL_DATADIR})
 install(FILES README.md LICENSE CHANGELOG.md DESTINATION ${CMAKE_INSTALL_DOCDIR})
 install(DIRECTORY docs/ DESTINATION ${CMAKE_INSTALL_DOCDIR})
 
+# Engine tests (loaders, rules, stress) and the legacy level converter
+if(PANG3D_BUILD_PLAYER)
+    add_executable(3dpang-tests tests/engine_test.cpp)
+    target_link_libraries(3dpang-tests PRIVATE pang3d_engine_player SDL3::SDL3)
+    target_compile_definitions(3dpang-tests PRIVATE
+        PANG3D_TEST_FIXTURES="${CMAKE_CURRENT_SOURCE_DIR}/tests/fixtures")
+    set_target_properties(3dpang-tests PROPERTIES AUTOMOC OFF EXCLUDE_FROM_ALL OFF)
+endif()
+
 # Smoke tests: play every level for 20 seconds (shooting), off screen.
 # SDL's "offscreen" driver needs EGL; set PANG3D_TEST_VIDEO_DRIVER to x11,
 # wayland or windows to use a real (hidden) window instead.
@@ -202,6 +211,14 @@ enable_testing()
 if(PANG3D_BUILD_PLAYER)
     set(PANG3D_TEST_VIDEO_DRIVER "offscreen" CACHE STRING "SDL video driver used by the tests")
     file(GLOB PANG3D_LEVELS RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}/data/levels" data/levels/*.xml)
+    add_test(NAME engine COMMAND 3dpang-tests)
+    set_tests_properties(engine PROPERTIES TIMEOUT 300
+        ENVIRONMENT "SDL_VIDEO_DRIVER=${PANG3D_TEST_VIDEO_DRIVER}")
+    find_package(Python3 COMPONENTS Interpreter QUIET)
+    if(Python3_FOUND)
+        add_test(NAME legacy_converter COMMAND ${Python3_EXECUTABLE} -I
+                 ${CMAKE_CURRENT_SOURCE_DIR}/tests/test_converter.py)
+    endif()
     foreach(level IN LISTS PANG3D_LEVELS)
         add_test(NAME demo_${level} COMMAND 3dpang --demo ${level} --frames 1200 --autofire)
         set_tests_properties(demo_${level} PROPERTIES

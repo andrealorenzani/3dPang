@@ -1,0 +1,29 @@
+<SceneGraph pu="50" pp="60" barmi="15" bvite="5" bfrutta="75" bbombe="45" btornado="45" cubeMapTexture="../data/mount.jpg">
+<Viste>
+<Vista numVista="0" x="25" y="20" z="91" />
+</Viste>
+<GrPalla texture="../data/pollonina.jpg" numballs="2" alpha="1">
+<Palla textured="1">
+<Sphere r="1" g="1" b="1" alpha="1" raggio="4" />
+</Palla>
+<Rimbalzo hmax="23.4375" grav="-127.738"></Rimbalzo>
+<Spostamento dx="-0.6655" dz="-3.3275"></Spostamento>
+<Traslazione x="13.5" y="23.4333" z="59.5"></Traslazione>
+</GrPalla>
+<GrAmb texture="../data/gras.jpg" principale="1" deletable="0" type="9">
+<Pavimento spessore="1" textured="1" ncellor="15" ncellvert="15" lato="5" alpha="1">
+<Paral r="1" g="1" b="1" dx="75" dy="1" dz="75" texUpName="3"></Paral>
+</Pavimento>
+<Traslazione x="0" y="0" z="0"></Traslazione>
+<Rotazione x="0" y="1" z="0" angle="0"></Rotazione>
+</GrAmb>
+<GrAmb texture="" principale="0" deletable="0" type="21">
+<Scala npioli="6"></Scala>
+<Traslazione x="12" y="1" z="40"></Traslazione>
+<Rotazione x="0" y="1" z="0" angle="90"></Rotazione>
+</GrAmb>
+<GrGiocat texture="">
+<Giocatore model="" texture="" nvite="5" />
+<Traslazione x="30" y="1.5" z="37.5"></Traslazione>
+</GrGiocat>
+</SceneGraph>

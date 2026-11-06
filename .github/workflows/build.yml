@@ -23,7 +23,7 @@ jobs:
           - name: Windows
             os: windows-2022
           - name: macOS
-            os: macos-14
+            os: macos-15
     steps:
       - uses: actions/checkout@v4
 
@@ -38,7 +38,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y ninja-build libgl1-mesa-dev libegl1-mesa-dev libx11-dev libxext-dev \
-            libxrandr-dev libxcursor-dev libxi-dev libxss-dev libxfixes-dev libxkbcommon-dev \
+            libxrandr-dev libxcursor-dev libxi-dev libxss-dev libxfixes-dev libxtst-dev libxkbcommon-dev \
             libwayland-dev wayland-protocols libdecor-0-dev xvfb
 
       - name: Configure

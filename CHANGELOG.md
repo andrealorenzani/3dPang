@@ -79,6 +79,16 @@ the `original_with_Eva` tag and branch.
 * `3dpang-editor LEVEL --screenshot FILE` / `--resave FILE`.
 * The editor shows the settings of the selected view and of the loaded
   power-up probabilities.
+* **Tests**: an engine test (loaders, levels, campaigns, difficulty scaling,
+  collision rules, a two-player stress run) and a converter test, besides the
+  per-level smoke tests: 13 in total, 77% line coverage of the game and engine
+  (`tools/coverage.sh`).
+* **Documentation for people and AI agents** in `docs/`: product, architecture,
+  code, developer manual and quality assurance.
+* **Agentic workflow**: the `/new_feature` Claude Code skill with the
+  `analyser`, `coder`, `qa` and `documenter` agents (`.claude/`).
+* README with badges, project history, install/play/developer sections, the
+  list of libraries with versions and credits.
 
 ## 1.0 - 2005-03-20
 

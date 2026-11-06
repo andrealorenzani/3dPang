@@ -44,7 +44,7 @@ Ubuntu 24.04 packages for Qt and the libraries SDL3 needs to build:
 ```sh
 sudo apt install cmake g++ git qt6-base-dev libgl1-mesa-dev libegl1-mesa-dev \
     libx11-dev libxext-dev libxrandr-dev libxcursor-dev libxi-dev libxss-dev \
-    libxfixes-dev libxkbcommon-dev libwayland-dev wayland-protocols libdecor-0-dev
+    libxfixes-dev libxtst-dev libxkbcommon-dev libwayland-dev wayland-protocols libdecor-0-dev
 ```
 
 On distributions that package SDL3 (`libsdl3-dev`), it is used instead of
