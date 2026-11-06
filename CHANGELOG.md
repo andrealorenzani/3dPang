@@ -1,6 +1,6 @@
 # Changelog
 
-## 2.0 - 2026-11-05
+## 2.0 - 2026-11-06
 
 The 2005 game, brought to current libraries and tools, and translated into
 English. Gameplay, levels and graphics are unchanged. The 2005 code is kept in
